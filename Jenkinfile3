@@ -11,8 +11,8 @@ pipeline {
     }
 
     agent { 
-       label 'au'
-
+       label 'papu'
+}
     stages { 
 
         stage('Cloning our Git') { 
