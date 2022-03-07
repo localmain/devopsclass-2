@@ -10,15 +10,16 @@ pipeline {
 
     }
 
-    agent any 
-
+    agent {   
+      label 'papu'
+}
     stages { 
 
         stage('Cloning our Git') { 
 
             steps { 
 
-                git 'https://github.com/YourGithubAccount/YourGithubRepository.git' 
+                git 'https://github.com/localmain/devopsclass-2.git' 
 
             }
 
