@@ -2,7 +2,7 @@ pipeline {
 
     environment { 
 
-        registry = "srikanta1219" 
+        registry = "Abhi1998" 
 
         registryCredential = 'dockerhub_creds' 
 
@@ -10,7 +10,8 @@ pipeline {
 
     }
 
-    agent any 
+    agent { 
+       label 'au'
 
     stages { 
 
