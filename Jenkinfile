@@ -16,7 +16,7 @@ pipeline {
            steps {
               
                 sh 'docker build -t devopsclass2 .' 
-                sh 'docker tag devopsclass2  Abhi1998/devopsclass2:latest'
+                sh 'docker tag devopsclass2  abhi1998/devopsclass2:latest'
                 
                
           }
@@ -26,7 +26,7 @@ pipeline {
           
         steps {
           withDockerRegistry(credentialsId: 'jjpmakmwy365', url: 'https://registry.hub.docker.com/') {
-		  sh  'docker push Abhi1998/devopsclass2:latest'
+		  sh  'docker abhi1998/devopsclass2:latest'
     
 	        }  
           }
