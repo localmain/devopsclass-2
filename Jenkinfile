@@ -6,7 +6,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '8956f257-38ec-4c57-ab0f-0c62ae697bd7', url: 'httpshttps://github.com/localmain/devopsclass-2.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '8956f257-38ec-4c57-ab0f-0c62ae697bd7', url: 'https://github.com/localmain/devopsclass-2.git']]])
              
           }
         }
