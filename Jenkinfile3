@@ -2,9 +2,9 @@ pipeline {
 
     environment { 
 
-        registry = "abhi1998" 
-
-        registryCredential = 'munna998' 
+        registry =  "https://registry.hub.docker.com"  
+        
+        registryCredential = 'abhi1998' 
 
         dockerImage = 'babudocker' 
 
@@ -46,7 +46,7 @@ pipeline {
 
                 script { 
 
-                    docker.withRegistry( 'munna998' ) { 
+                    docker.withRegistry( 'munna998','abhi1998' ) { 
 
                         dockerImage.push() 
 
