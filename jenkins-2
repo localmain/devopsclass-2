@@ -4,7 +4,7 @@ pipeline {
 
         registry = "https://registry.hub.docker.com" 
 
-        registryCredential = 'dockerhub_repo' 
+        registryCredential = 'abhi1998' 
 
         dockerImage = 'myfirstexp' 
 
@@ -45,7 +45,7 @@ pipeline {
 
                 script { 
 
-                    docker.withRegistry( '', registryCredential ) { 
+                    docker.withRegistry( 'munna998',abhi1998 ) { 
 
                         dockerImage.push() 
 
