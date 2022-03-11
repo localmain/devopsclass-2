@@ -4,11 +4,12 @@ pipeline {
 
         registry = "abhi1998" 
 
-        registryCredential = 'dockerhub_creds' 
+        registryCredential = '' 
 
         dockerImage = 'babudocker' 
 
     }
+
 
     agent { 
        label 'papu'
