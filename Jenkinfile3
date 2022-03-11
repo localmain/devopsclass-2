@@ -4,7 +4,7 @@ pipeline {
 
         registry = "abhi1998" 
 
-        registryCredential = '' 
+        registryCredential = 'munna998' 
 
         dockerImage = 'babudocker' 
 
@@ -46,7 +46,7 @@ pipeline {
 
                 script { 
 
-                    docker.withRegistry( '', registryCredential ) { 
+                    docker.withRegistry( 'munna998' ) { 
 
                         dockerImage.push() 
 
