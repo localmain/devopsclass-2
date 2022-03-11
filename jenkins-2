@@ -45,7 +45,7 @@ pipeline {
 
                 script { 
 
-                    docker.withRegistry( 'munna998',abhi1998 ) { 
+                    docker.withRegistry( 'munna998','abhi1998') { 
 
                         dockerImage.push() 
 
